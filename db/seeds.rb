@@ -3,5 +3,6 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+5.times do
+  Employee.create( email: Faker::Internet.email, encrypted_password: Faker::Internet.password(min_length: 26, max_length: 26, mix_case: true) )
+end
